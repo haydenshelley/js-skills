@@ -191,26 +191,79 @@
 
 // 3) Write a function that takes in an array of numbers and returns a new array with the numbers in reverse order.
 
-function reverseNums(array) {
-  var reverseArray = [];
-  for (var i = array.length - 1; i >= 0; i--) {
-    reverseArray.push(array[i]);
-  }
-  return reverseArray;
-}
+// function reverseNums(array) {
+//   var reverseArray = [];
+//   for (var i = array.length - 1; i >= 0; i--) {
+//     reverseArray.push(array[i]);
+//   }
+//   return reverseArray;
+// }
 
-console.log(reverseNums([1, 2, 3, 4, 5]));
+// console.log(reverseNums([1, 2, 3, 4, 5]));
 
 // 4) Write a function that takes in an array of words and returns the number of words that begin with the letter “a”.
 
+// function letterCount(words) {
+//   var aWords = words.filter(function (word) {
+//     return word[0] === "a";
+//   });
+//   return aWords.length;
+// }
+
+// console.log(letterCount(["apple", "arm", "desk", "banana", "answer"]));
+
 // 5) Write a function that takes in an array of strings and joins them together to make a single string separated by commas.
+
+// function joinStrings(words) {
+//   return words.join(",");
+// }
+
+// console.log(joinStrings(["apple", "arm", "desk", "banana", "answer"]));
 
 // 6) Write a function that takes in an array of numbers and returns the product of all the numbers (each number multiplied by each other).
 
+// function multiply(numbers) {
+//   var product = 1;
+//   numbers.forEach(function (number) {
+//     product *= number;
+//   });
+//   return product;
+// }
+
+// console.log(multiply([2, 3, 5, 23, 5, 25, 5]));
+
 // 7) Write a function that takes in an array of numbers and returns the two smallest numbers.
+
+// function smallestTwo(numbers) {
+//   var sorted = numbers.sort((a, b) => a - b);
+//   return `${sorted[0]}, ${sorted[1]}`;
+// }
+
+// console.log(smallestTwo([53, 2, 66, 4, 12]));
 
 // 8) Write a function that takes in an array of numbers and returns a count of how many zeros are in the array.
 
+// function zeroCount(numbers) {
+//   var zeros = numbers.filter(function (number) {
+//     return number === 0;
+//   });
+//   return zeros.length;
+// }
+
+// console.log(zeroCount([1, 4, 0, 2, 4, 0, 0, 2]));
+
 // 9) Write a function that takes in an array of numbers and returns true if all the numbers are bigger than 10, otherwise returns false.
+
+function overTen(numbers) {
+  var answer = true;
+  numbers.forEach(function (number) {
+    if (number < 10) {
+      answer = false;
+    }
+  });
+  return answer;
+}
+
+console.log(overTen([23, 49, 20]));
 
 // 10) Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.
