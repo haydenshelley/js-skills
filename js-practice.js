@@ -254,16 +254,33 @@
 
 // 9) Write a function that takes in an array of numbers and returns true if all the numbers are bigger than 10, otherwise returns false.
 
-function overTen(numbers) {
-  var answer = true;
-  numbers.forEach(function (number) {
-    if (number < 10) {
-      answer = false;
-    }
-  });
-  return answer;
-}
+// function overTen(numbers) {
+//   var answer = true;
+//   numbers.forEach(function (number) {
+//     if (number < 10) {
+//       answer = false;
+//       return;
+//     }
+//   });
+//   return answer;
+// }
 
-console.log(overTen([23, 49, 20]));
+// console.log(overTen([23, 49, 2]));
 
 // 10) Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.
+
+function totalA(words) {
+  var count = 0;
+  words.forEach(function (word) {
+    var i = 0;
+    while (i < word.length) {
+      if (word[i] === "a") {
+        count++;
+      }
+      i++;
+    }
+  });
+  return count;
+}
+
+console.log(totalA(["banana", "grape", "hello", "answer"]));
