@@ -134,14 +134,31 @@
 // }
 
 // for loop
-function sumCombinations(numsOne, numsTwo) {
-  var result = [];
-  for (var i = 0; i < numsOne.length; i++) {
-    for (var j = 0; j < numsTwo.length; j++) {
-      result.push(numsOne[i] + numsTwo[j]);
+// function sumCombinations(numsOne, numsTwo) {
+//   var result = [];
+//   for (var i = 0; i < numsOne.length; i++) {
+//     for (var j = 0; j < numsTwo.length; j++) {
+//       result.push(numsOne[i] + numsTwo[j]);
+//     }
+//   }
+//   return result;
+// }
+
+// console.log(sumCombinations([1, 5, 10], [100, 500, 1000]));
+
+// javascript bubble sort
+
+function bubbleSort(array) {
+  for (var i = 0; i < array.length; i++) {
+    for (var j = 0; j < array.length - i - 1; j++) {
+      if (array[j] > array[j + 1]) {
+        var tempNum = array[j];
+        array[j] = array[j + 1];
+        array[j + 1] = tempNum;
+      }
     }
   }
-  return result;
+  return array;
 }
 
-console.log(sumCombinations([1, 5, 10], [100, 500, 1000]));
+console.log(bubbleSort([2, 4, 1, 245, 23, 5]));
