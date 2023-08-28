@@ -148,17 +148,69 @@
 
 // javascript bubble sort
 
-function bubbleSort(array) {
-  for (var i = 0; i < array.length; i++) {
-    for (var j = 0; j < array.length - i - 1; j++) {
-      if (array[j] > array[j + 1]) {
-        var tempNum = array[j];
-        array[j] = array[j + 1];
-        array[j + 1] = tempNum;
-      }
-    }
+// function bubbleSort(array) {
+//   for (var i = 0; i < array.length; i++) {
+//     for (var j = 0; j < array.length - i - 1; j++) {
+//       if (array[j] > array[j + 1]) {
+//         var tempNum = array[j];
+//         array[j] = array[j + 1];
+//         array[j + 1] = tempNum;
+//       }
+//     }
+//   }
+//   return array;
+// }
+
+// console.log(bubbleSort([2, 4, 1, 245, 23, 5]));
+
+// 1) Write a function that takes in an array of numbers and returns its sum.
+
+// function sum(numbers) {
+//   var sum = 0;
+//   numbers.forEach(function (num) {
+//     sum += num;
+//   });
+//   return sum;
+// }
+
+// console.log(sum([4, 2, 5, 6]));
+
+// 2) Write a function that takes in an array of strings and returns the smallest string.
+
+// function smallestString(words) {
+//   var smallest = words[0];
+//   words.forEach(function (word) {
+//     if (smallest.length > word.length) {
+//       smallest = word;
+//     }
+//   });
+//   return smallest;
+// }
+
+// console.log(smallestString(["hey", "hi", "hello"]));
+
+// 3) Write a function that takes in an array of numbers and returns a new array with the numbers in reverse order.
+
+function reverseNums(array) {
+  var reverseArray = [];
+  for (var i = array.length - 1; i >= 0; i--) {
+    reverseArray.push(array[i]);
   }
-  return array;
+  return reverseArray;
 }
 
-console.log(bubbleSort([2, 4, 1, 245, 23, 5]));
+console.log(reverseNums([1, 2, 3, 4, 5]));
+
+// 4) Write a function that takes in an array of words and returns the number of words that begin with the letter “a”.
+
+// 5) Write a function that takes in an array of strings and joins them together to make a single string separated by commas.
+
+// 6) Write a function that takes in an array of numbers and returns the product of all the numbers (each number multiplied by each other).
+
+// 7) Write a function that takes in an array of numbers and returns the two smallest numbers.
+
+// 8) Write a function that takes in an array of numbers and returns a count of how many zeros are in the array.
+
+// 9) Write a function that takes in an array of numbers and returns true if all the numbers are bigger than 10, otherwise returns false.
+
+// 10) Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.
