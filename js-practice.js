@@ -269,18 +269,18 @@
 
 // 10) Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.
 
-function totalA(words) {
-  var count = 0;
-  words.forEach(function (word) {
-    var i = 0;
-    while (i < word.length) {
-      if (word[i] === "a") {
-        count++;
-      }
-      i++;
-    }
-  });
-  return count;
-}
+// function totalA(words) {
+//   var count = 0;
+//   words.forEach(function (word) {
+//     var i = 0;
+//     while (i < word.length) {
+//       if (word[i] === "a") {
+//         count++;
+//       }
+//       i++;
+//     }
+//   });
+//   return count;
+// }
 
-console.log(totalA(["banana", "grape", "hello", "answer"]));
+// console.log(totalA(["banana", "grape", "hello", "answer"]));
